@@ -575,9 +575,9 @@ body {
   width: 32px;
   height: 30px;
   border-radius: 55%;
-  transition: .2s;
+  transition: 0.2s;
 }
-.pb-more i:hover{
+.pb-more i:hover {
   color: #0298d4;
 }
 .pb-more:hover {
@@ -602,37 +602,37 @@ body {
   height: 30px;
   border-radius: 50%;
   margin-left: -5px;
-  transition: .3s;
+  transition: 0.3s;
 }
-.pb-icon ul li:hover i{
+.pb-icon ul li:hover i {
   color: #0298d4;
   background: rgba(0, 157, 255, 0.2);
 }
 .pb-icon ul li:hover small {
   color: #0298d4;
 }
-.pb-icon ul li:nth-child(1):hover i{
+.pb-icon ul li:nth-child(1):hover i {
   color: #0298d4;
   background: rgba(0, 157, 255, 0.2);
 }
 .pb-icon ul li:nth-child(1):hover small {
   color: #0298d4;
 }
-.pb-icon ul li:nth-child(2):hover i{
+.pb-icon ul li:nth-child(2):hover i {
   color: #038d28;
-  background: rgba(3, 141, 40, .2);
+  background: rgba(3, 141, 40, 0.2);
 }
 .pb-icon ul li:nth-child(2):hover small {
   color: #038d28;
 }
-.pb-icon ul li:nth-child(3):hover i{
+.pb-icon ul li:nth-child(3):hover i {
   color: rgb(185, 16, 109);
   background: rgba(182, 24, 111, 0.2);
 }
 .pb-icon ul li:nth-child(3):hover small {
   color: rgb(185, 16, 109);
 }
-.pb-icon ul span li:nth-child(2):hover i{
+.pb-icon ul span li:nth-child(2):hover i {
   color: #0298d4;
   background: rgba(0, 157, 255, 0.2);
 }
@@ -655,7 +655,7 @@ body {
   display: flex;
   font-size: 13px;
   margin-left: -3px;
-  transition: .3s;
+  transition: 0.3s;
 }
 .pb-icon ul li a small span {
   margin-left: 3px;
@@ -664,7 +664,36 @@ body {
   width: 100%;
   margin-bottom: 4px;
 }
+.post-box.reply {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--bg3-color);
+  border-radius: 15px;
+  padding: 15px 15px 0 15px;
+}
+.post-box.reply:hover {
+  background: var(--bg2-color);
+}
+.post-box.reply .pb-img {
+  margin-right: 4px;
+} 
+.post-box.reply p {
+  font-size: 14.5px;
+  margin-top: -13px;
+  margin-bottom: 17px;
+}
+.pb-post-img.reply {
+  width: 100%;
+  margin-bottom: -4px;
+}
+.pb-post-img.kutipan .pb-img {
+  height: 20px;
+  width: 20px;
+}
 .pb-post-img img {
   max-width: 100%;
   border-radius: 8px;
+}
+.pb-post-img.kutipan .pb-content-wrap {
+  display: flex;
 }
