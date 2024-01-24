@@ -506,7 +506,7 @@ body {
   width: 100%;
   max-width: 100%;
   display: flex;
-  padding: 15px;
+  padding: 15px 15px 10px 15px;
   background: var(--bg1-color);
   border-bottom: 1px solid var(--bg3-color);
   cursor: pointer;
@@ -536,20 +536,28 @@ body {
   justify-content: space-between;
 }
 .pb-dn {
-  margin-bottom: 18px;
+  align-items: center;
+  margin-bottom: 15px;
 }
 .pb-dn h5 {
+  position: relative;
   display: flex;
   font-size: 15px;
   font-weight: 700;
   margin-bottom: 3px;
+}
+.pb-dn h5 i {
+  position: absolute;
+  font-size: 3px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .pb-dn h5 small {
   font-size: 15px;
   margin-right: 3px;
 }
 .pb-dn h5 span {
-  margin-right: 2px;
+  margin-right: 5px;
 }
 .pb-dn h5 small:after {
   display: block;
@@ -566,6 +574,7 @@ body {
 }
 .pb-dn p {
   font-size: 15px;
+  margin-bottom: 1px;
 }
 .pb-more,
 .pb-more i {
@@ -664,6 +673,20 @@ body {
   width: 100%;
   margin-bottom: 4px;
 }
+.pb-dn p span {
+  position: relative;
+  color: #009dff;
+}
+.pb-dn p span:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  margin-top: -3px;
+}
+.pb-dn p span:hover:after {
+  border-bottom: 1px solid #009dff;
+}
 .post-box.reply {
   display: flex;
   flex-direction: column;
@@ -685,6 +708,9 @@ body {
 .pb-post-img.reply {
   width: 100%;
   margin-bottom: -4px;
+}
+.pb-post-img.kutipan {
+  margin-top: 4px;
 }
 .pb-post-img.kutipan .pb-img {
   height: 20px;
