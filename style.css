@@ -1129,6 +1129,12 @@ body {
   .pb-dn h5 small:hover:after {
     border-bottom: 1px solid #fff;
   }
+  .post-box:hover {
+    background: inherit;
+  }
+  .post-box.reply:hover {
+    background: inherit;
+  }
 }
 @media (max-width: 320px){
   .container {
